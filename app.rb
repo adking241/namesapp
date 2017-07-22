@@ -1,14 +1,11 @@
 require "sinatra"
 
 get '/' do
-	redirect '/get_names'
+	redirect '/names'
 end
 
-get '/get_names' do
+get '/names' do
 	erb :names
 end
 
-post '/given_name' do
-	given_name = params[:name].gsub(' ', '-')
-	
-end
+# sinatra always requires views folder w/ erb files
