@@ -1,4 +1,5 @@
 require "sinatra"
+# sinatra always requires views folder w/ erb files
 
 get '/' do
 	redirect '/names'
@@ -8,4 +9,7 @@ get '/names' do
 	erb :names
 end
 
-# sinatra always requires views folder w/ erb files
+get 'names_list' do
+  firstname = params[:firstname]
+  lastname = params[:lastname]
+end
