@@ -9,7 +9,7 @@ get '/names' do
 	erb :names
 end
 
-get 'names_list' do
+post 'names_list' do
   firstnames = params[:firstnames]
   lastnames = params[:lastnames]
   firstnames.each do |f_names|
