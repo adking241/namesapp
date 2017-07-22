@@ -3,19 +3,18 @@
 Hello! Please enter your name.
 </p>
 
-<form action="names_list">
+<form method="post" action="names_list" id="firstnames" id="lastnames">
 First name:<br>
-<input type="text" name="firstname" required="">
+<input type="text" name="firstnames[]" required="">
 <br>
 Last name:<br>
-<input type="text" name="lastname" required="">
+<input type="text" name="lastnames[]" required="">
 <br><br>
+<button type="button" onclick="addName()">Add Name</button>
 <input type="submit">
 </form>
 
-<p>Note that the form itself is not visible.</p>
-<p>Also note that the default width of a text field is 20 characters.</p>
 
-</body>
-</html>
+<p>Please note 20 characters max for each box.</p>
+
 

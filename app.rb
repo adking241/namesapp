@@ -10,6 +10,12 @@ get '/names' do
 end
 
 get 'names_list' do
-  firstname = params[:firstname]
-  lastname = params[:lastname]
+  firstnames = params[:firstnames]
+  lastnames = params[:lastnames]
+  firstnames.each do |f_names|
+  	puts f_names
+  end
+  lastnames.each do |l_names|
+  	puts l_names
+  end
 end
